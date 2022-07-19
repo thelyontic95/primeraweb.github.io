@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler´s</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>L</span>yon <span>T</span>ravels</a>
+        <nav class="navbar">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Imágenes">Imágenes</a>
+            <a href="#Paquetes">Paquetes</a>
+            <a href="#Servicios">Servicios</a>
+            <a href="#Galeria">Galeria</a>
+            <a href="#Vistas">Vistas</a>
+            <a href="#Contactos">Contactos</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..." />
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Ingresa tu correo">
+            <input type="password" class="box" placeholder="Ingresa tu contraseña">
+            <input type="submit" value="Entrar" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Recordarme</label>
+            <p>Olvidó su contraseña? <a href="#">Clic Aqui</a></p>
+            <p>No tiene una cuenta? <a href="#">Registrese ahora</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="Inicio">
+        <div class="content">
+            <h3>la aventura vale la pena</h3>
+            <p>Descubre nuevos lugares con nosotros, la aventura te espera.</p>
+            <a href="#" class="btn">descubrir más</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="book" id="Imágenes">
+        <h1 class="heading">
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>n</span>
+            <span>d</span>
+            <span>a</span>
+            <span class="space"></span>
+            <span>a</span>
+            <span>h</span>
+            <span>o</span>
+            <span>r</span>
+            <span>a</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>destino</h3>
+                    <input type="text" placeholder="lugar">
+                </div>
+                <div class="inputBox">
+                    <h3>cuántas personas</h3>
+                    <input type="number" placeholder="número de integrantes">
+                </div>
+                <div class="inputBox">
+                    <h3>salida</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>llegada</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="agendar">
+            </form>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
